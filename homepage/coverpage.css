@@ -16,16 +16,12 @@ html {
   align-content: center;
 }
 
-.container-footer {
+.index {
   border: 3px solid lightblue;
   background-color: lightblue;
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   height: 5vh;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .go-to-index {
