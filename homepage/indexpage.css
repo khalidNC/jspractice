@@ -1,0 +1,28 @@
+/* The html element to 62.5% of the default font size of the browser, 
+which is used for calculating font sizes using the rem unit as 1rem equvalent 10px */
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  border: 3px solid lightgray;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 90vh;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
+}
+
+.chapter {
+  font-size: 3rem;
+  margin: 0 0 0 1rem;
+}
+
