@@ -23,14 +23,16 @@
     </main>
     <footer>
       <div class="container index">
-        <button class="go-to-index" onclick="indexPage()">Go to Index</button>
+        <button class="go-to-index" onclick="indexPage('/homepage/index.html')">
+          Go to Index
+        </button>
       </div>
     </footer>
   </body>
 
   <script>
-    function indexPage() {
-      let indexUrl = "/homepage/index.html";
+    function indexPage(indexUrl) {
+      this.indexUrl = indexUrl;
       open(indexUrl);
     }
   </script>
