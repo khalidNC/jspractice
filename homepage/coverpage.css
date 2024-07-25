@@ -24,9 +24,25 @@ html {
   height: 5vh;
 }
 
+/* Button style */
 .go-to-index {
   background-color: cornflowerblue;
   margin: 0 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px #999;
+}
+
+/* Style the button with hover effect */
+.go-to-index:hover {
+  background-color: rgb(100, 180, 237);
+}
+
+/* Style the button with click effect */
+.go-to-index:active {
+  background-color: rgb(100, 180, 237);
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
 }
 
 h1 h2 {
