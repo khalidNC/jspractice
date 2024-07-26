@@ -4,25 +4,50 @@ html {
   font-size: 62.5%;
 }
 
-.container {
-  border: 3px solid lightgray;
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 90vh;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-h1 {
+body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 5rem;
 }
 
-.chapter {
-  font-size: 3rem;
-  margin: 0 0 0 1rem;
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  margin: 10px 0;
+}
+
+.container a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.container .chapter {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container .lessons {
+  display: none;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.container .page-number {
+  color: #999;
 }
 

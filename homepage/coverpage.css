@@ -5,16 +5,30 @@ html {
 }
 
 .container {
-  border: 3px solid lightgray;
-  background-color: lightgray;
+  max-width: 90rem;
+  margin: 2rem auto;
+  /* padding: 2rem; */
+  border: 3px solid #ddd;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  /* border: 3px solid lightgray; */
+  /* background-color: lightgray; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   flex-wrap: wrap;
   align-content: center;
 }
+/* .container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
 
 .index {
   border: 3px solid lightblue;

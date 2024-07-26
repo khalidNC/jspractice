@@ -8,17 +8,146 @@
   </head>
   <body>
     <div class="container">
-      <div class="heading"><h1>Index</h1></div>
-      <div class="chapter chap01-introduction">Chapter 01 (Intorduction)</div>
-      <div class="chapter chap02-advance">Chapter 02 (Advance)</div>
-      <div class="chapter chap03-es6">Chapter 03 (ES6)</div>
-      <div class="chapter chap04-daily-usages">
-        Chapter 04 (Daily Usages Of JS)
-      </div>
-      <div class="chapter chap05-dom-manupulation">
-        Chapter 05 (DOM Manupulation)
-      </div>
-      <div class="chapter chap06-projects">Chapter 06 (Projects)</div>
+      <h1>Table of Content</h1>
+      <ul>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter01: Introduction <span class="page-number">1</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#"
+                >Lesson1.1: Basic <span class="page-number">2</span></a
+              >
+            </li>
+            <li>
+              <a href="#">Lesson1.2: List <span class="page-number">3</span></a>
+            </li>
+            <li>
+              <a href="#">Lesson1.3: Loop <span class="page-number">4</span></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter02: Advance <span class="page-number">5</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#"
+                >Lesson2.1: Comprehension <span class="page-number">6</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson2.2: Function <span class="page-number">7</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson2.3: Array <span class="page-number">8</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter03: ES6 <span class="page-number">9</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#">Lesson3.1: ES1 <span class="page-number">10</span></a>
+            </li>
+            <li>
+              <a href="#">Lesson3.2: ES2 <span class="page-number">11</span></a>
+            </li>
+            <li>
+              <a href="#">Lesson3.3: ES3 <span class="page-number">12</span></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter04: Daily Usages of JS
+            <span class="page-number">13</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#"
+                >Lesson4.1: DUJS1 <span class="page-number">14</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson4.2: DUJS2 <span class="page-number">15</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson4.3: DUJS3 <span class="page-number">16</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter05: DOM Manupulation <span class="page-number">17</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#"
+                >Lesson5.1: DOM1 <span class="page-number">18</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson5.2: DOM2 <span class="page-number">19</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson5.3: DOM3 <span class="page-number">20</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="chapter" onclick="toggleLessons(event)"
+            >Chapter06: Projects <span class="page-number">21</span></a
+          >
+          <ul class="lessons">
+            <li>
+              <a href="#"
+                >Lesson6.1: Project1 <span class="page-number">22</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson6.2: Project2 <span class="page-number">23</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lesson6.3: Project3 <span class="page-number">24</span></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
+
+    <script>
+      function toggleLessons(event) {
+        event.preventDefault();
+        const chapter = event.target;
+        const subMenu = chapter.nextElementSibling;
+
+        if (subMenu.style.display === "block") {
+          subMenu.style.display = "none";
+        } else {
+          subMenu.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
