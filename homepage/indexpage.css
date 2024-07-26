@@ -35,6 +35,7 @@ body {
   color: #333;
   display: flex;
   justify-content: space-between;
+  margin: 0 6rem 0 6rem;
 }
 .container .chapter {
   font-weight: bold;
@@ -49,5 +50,6 @@ body {
 
 .container .page-number {
   color: #999;
+  font-size: 1.5rem;
 }
 
