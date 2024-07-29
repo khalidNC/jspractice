@@ -1,0 +1,89 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  color: #0f0e0e;
+  padding: 10px 20px;
+  height: 100vh;
+  max-width: 20rem;
+  position: fixed;
+  overflow-y: auto;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+/*
+header nav ul {
+  font-size: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: list-item;
+  /* display: inline; */
+  /* margin-right: 10px;
+}
+
+header nav ul li a {
+  color: #111111;
+  text-decoration: none;
+}
+
+ main {
+  padding: 20px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+} 
+*/
+
+.container h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  margin: 10px 0;
+}
+
+.container a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem 0 6rem;
+}
+.container .chapter {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container .lessons {
+  display: none;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.container .page-number {
+  color: #999;
+  font-size: 1.5rem;
+}
