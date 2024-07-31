@@ -1,89 +1,55 @@
+/* The html element to 62.5% of the default font size of the browser, 
+which is used for calculating font sizes using the rem unit as 1rem equvalent 10px */
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.aside {
+  max-width: 30rem;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aside h1 {
   text-align: left;
-  color: #0f0e0e;
-  padding: 10px 20px;
-  height: 100vh;
-  max-width: 20rem;
-  position: fixed;
-  overflow-y: auto;
-}
-
-header h1 {
   font-size: 3rem;
 }
 
-/*
-header nav ul {
-  font-size: 2rem;
+.aside ul {
   list-style: none;
   padding: 0;
 }
 
-header nav ul li {
-  display: list-item;
-  /* display: inline; */
-  /* margin-right: 10px;
-}
-
-header nav ul li a {
-  color: #111111;
-  text-decoration: none;
-}
-
- main {
-  padding: 20px;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-} 
-*/
-
-.container h1 {
-  text-align: center;
-}
-
-.container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.container li {
+.aside li {
   margin: 10px 0;
 }
 
-.container a {
+.aside a {
   text-decoration: none;
   color: #333;
   display: flex;
   justify-content: space-between;
-  margin: 0 6rem 0 6rem;
+  /* margin: 0 6rem 0 6rem; */
 }
-.container .chapter {
+.aside .chapter {
   font-weight: bold;
   font-size: 2rem;
 }
 
-.container .lessons {
+.aside .lessons {
   display: none;
   margin-left: 2rem;
   font-size: 1.5rem;
 }
 
-.container .page-number {
+.aside .page-number {
   color: #999;
   font-size: 1.5rem;
 }
